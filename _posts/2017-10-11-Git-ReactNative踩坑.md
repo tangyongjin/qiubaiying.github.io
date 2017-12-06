@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Git 代码回滚
-subtitle:   ReactNative踩坑
+title:      ReactNative踩坑 
+subtitle:   
 date:       2017-02-16
 author:     BY
 header-img: img/post-bg-debug.png
