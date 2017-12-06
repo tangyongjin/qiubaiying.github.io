@@ -23,10 +23,27 @@ vi android/gradlew , set ff=unix
 
 adb shell date -s $(date +%Y%m%d.%H%M%S)
 
-	
 
 
-adb shell date -s $(date +%Y%m%d.%H%M%S)
+#### 坑3：Chrome React Native debugger console错误 ：   
+No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+安装插件:
+
+allow-control-allow-origin 
 
 
 
+
+#### 坑4：make network request show in chrome 
+
+add in js:
+
+XMLHttpRequest = GLOBAL.originalXMLHttpRequest ? GLOBAL.originalXMLHttpRequest : GLOBAL.XMLHttpRequest;
+
+
+
+
+#### 坑4：run chrome with flags:
+
+ open /Applications/Google\ Chrome.app --args --allow-file-access-from-files  --disable-web-security
